@@ -1,3 +1,4 @@
+import Navigation from "@/components/shared/Navigation";
 import "./globals.css";
 
 export const metadata = {
@@ -8,9 +9,16 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+      <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;700&display=swap"
+        />
+      </head>
       <body
-        className="antialiased"
+        className="antialiased bg-black max-w-2xl px-8 lg:px-0 mx-auto"
       >
+        <Navigation/>
         {children}
       </body>
     </html>

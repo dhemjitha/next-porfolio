@@ -70,3 +70,13 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+.text-underlay-1 {
+  background: linear-gradient(90deg, #3ce5c0 6.04%, #4b9ed9 51.35%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+
+
