@@ -9,7 +9,7 @@ function Title() {
                 <h1 className="font-semibold">Aspiring Full Stack Developer</h1>
                 <h1>ReactJS | NextJS | ExpressJS | TypeScript</h1>
             </div>
-            <div className="flex space-x-6 mt-4">
+            <div className="flex space-x-6 mt-2">
                 <SocialIcon
                     url="https://github.com/dhemjitha"
                     style={{ height: 32, width: 32 }}

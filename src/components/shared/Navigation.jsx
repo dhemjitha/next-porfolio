@@ -2,15 +2,18 @@
 
 import React, { useState } from 'react'
 import Link from 'next/link'
-import { Button } from '../ui/button';
+import { usePathname } from 'next/navigation';
 
 function Navigation() {
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const pathname = usePathname();
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
     }
+
+    const isActiveLink = (path) => pathname === path;
 
     return (
         <nav className="flex py-5 justify-between items-center">
@@ -21,10 +24,29 @@ function Navigation() {
             </div>
 
             {/* Align the buttons to the right */}
-            <div className="lg:flex lg:gap-x-4 ml-auto hidden justify-center">
-                <Button>Home</Button>
-                <Button>About</Button>
-                <Button>Let's talk</Button>
+            <div className="lg:flex lg:gap-x-10 ml-auto hidden justify-center text-white">
+                <Link
+                    href="/"
+                    className={`block rounded-lg px-2 py-1 font-semibold ${isActiveLink('/') ? 'bg-blue-700 text-white' : ''
+                        }`}
+                >
+                    Home
+                </Link>
+                
+                <Link
+                    href="/about"
+                    className={`block rounded-lg px-2 py-1 font-semibold ${isActiveLink('/about') ? 'bg-blue-700 text-white' : ''
+                        }`}
+                >
+                    About
+                </Link>
+
+                <Link
+                    href="/#lets-talk"
+                    className={`block rounded-lg px-2 py-1 font-semibold`}
+                >
+                    Let's Talk
+                </Link>
             </div>
 
             <div className="flex items-center space-x-2">
