@@ -41,7 +41,7 @@ function Footer() {
             <div className="mt-2 flex items-center justify-between font-semibold">
                 <a href="/">Home</a>
                 <a href="/about">About</a>
-                <a href="/contact">Let's Talk</a>
+                <a href="/#lets-talk">Let's Talk</a>
             </div>
             <div className="mt-5 flex justify-center">
                 <span className="text-sm">
