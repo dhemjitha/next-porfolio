@@ -5,7 +5,7 @@ import { PhoneCall } from 'lucide-react'
 function Contact() {
     return (
 
-        <section id="/#lets-talk">
+        <section id="lets-talk">
             <div className=" text-white">
                 <h1 className="text-2xl font-semibold">Let's Talk</h1>
                 <p className="mt-4">

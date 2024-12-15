@@ -72,11 +72,12 @@ body {
 }
 
 .text-underlay-1 {
-  background: linear-gradient(90deg, #3ce5c0 6.04%, #4b9ed9 51.35%);
+  background: linear-gradient(90deg, #6ec1e4 6.04%, #1e90ff 51.35%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
+
 
 .text-underlay-2 {
   background: linear-gradient(98deg, #d9ff00 -9.47%, #00a49d 65.47%);
@@ -92,3 +93,6 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
+html {
+  scroll-behavior: smooth;
+}
