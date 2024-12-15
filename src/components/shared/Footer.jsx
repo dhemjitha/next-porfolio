@@ -23,8 +23,8 @@ function Footer() {
                         style={{ height: 28, width: 28 }}
                     />
                     <SocialIcon
-                        url="https://www.facebook.com/dulran.hemjitha.1?mibextid=LQQJ4d"
-                        style={{ height: 28, width: 28 }}
+                        url="https://www.linkedin.com/in/dulran-hemjitha/"
+                        style={{ height: 32, width: 32 }}
                     />
                     <SocialIcon
                         network="x"

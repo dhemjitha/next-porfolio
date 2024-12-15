@@ -23,7 +23,6 @@ function Navigation() {
                 </a>
             </div>
 
-            {/* Align the buttons to the right */}
             <div className="lg:flex lg:gap-x-10 ml-auto hidden justify-center text-white">
                 <Link
                     href="/"
@@ -85,7 +84,6 @@ function Navigation() {
                 </button>
             </div>
 
-            {/* Mobile menu */}
             {isMenuOpen && (
                 <div className="fixed inset-0 bg-black bg-opacity-80 backdrop-blur-lg z-50 flex justify-center items-center">
                     <nav className="flex flex-col items-center space-y-6 text-white text-2xl font-semibold">
