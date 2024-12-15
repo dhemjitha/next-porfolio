@@ -7,7 +7,7 @@ import { SocialIcon } from "react-social-icons";
 
 function Footer() {
     return (
-        <footer className="flex flex-col  max-w-screen-lg mx-auto gap-y-3 py-12  text-white">
+        <footer className="flex flex-col  max-w-screen-lg mx-auto gap-y-3 py-5  text-white">
             <Separator />
 
             <Avatar>
