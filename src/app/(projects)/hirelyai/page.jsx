@@ -15,7 +15,6 @@ function page() {
             </p>
 
             <section className="space-y-6">
-                {/* Key Features */}
                 <div>
                     <h2 className="text-2xl font-semibold mb-2">Key Features</h2>
                     <ul className="list-disc list-inside space-y-2 text-gray-300">
@@ -25,7 +24,6 @@ function page() {
                     </ul>
                 </div>
 
-                {/* Add Images Here */}
                 <div>
                     <h2 className="text-2xl font-semibold mb-2"></h2>
                     <div className="grid grid-cols-1 gap-4">
@@ -39,7 +37,6 @@ function page() {
                     </div>
                 </div>
 
-                {/* Tech Stack */}
                 <div>
                     <h2 className="text-2xl font-semibold mb-2">Tech Stack</h2>
                     <p className="text-gray-300">
@@ -51,7 +48,6 @@ function page() {
                     </p>
                 </div>
 
-                {/* Impact */}
                 <div>
                     <h2 className="text-2xl font-semibold mb-2">Impact</h2>
                     <p className="text-gray-300">
@@ -60,7 +56,6 @@ function page() {
                     </p>
                 </div>
 
-                {/* Explore */}
                 <div>
                     <h2 className="text-2xl font-semibold mb-2">Explore</h2>
                     <p>
