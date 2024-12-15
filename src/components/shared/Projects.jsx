@@ -15,7 +15,7 @@ function Projects() {
     {
       title: 'AuraFashion - Modern E-Commerce Platform',
       description: 'A seamless shopping experience with advanced features.',
-      link: '/projects/aurafashion',
+      link: '/aurafashion',
       projectLink: 'https://aurafashion.rf.gd/'
     },
   ];

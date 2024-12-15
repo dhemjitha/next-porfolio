@@ -85,4 +85,10 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
+.text-underlay-3 {
+  background: linear-gradient(98deg, #44349e -9.47%, #ff758c 65.47%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
