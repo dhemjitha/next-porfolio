@@ -4,6 +4,7 @@ import React from 'react'
 import { Separator } from '../ui/separator'
 import { Avatar, AvatarImage } from '../ui/avatar';
 import { SocialIcon } from "react-social-icons";
+import Link from 'next/link';
 
 function Footer() {
     return (
@@ -11,7 +12,7 @@ function Footer() {
             <Separator />
 
             <Avatar>
-                <AvatarImage src="https://media.licdn.com/dms/image/v2/D5603AQHNo8f5n--PvA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1720128085901?e=1740614400&v=beta&t=ptG_PFbouvLdtcjWa4JtRPTw_TA9Py72bHZoayLjBpQ" />
+                <AvatarImage src="https://media.licdn.com/dms/image/v2/D5603AQHNo8f5n--PvA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1720128085923?e=1746057600&v=beta&t=lmKpyElbPzGnR5fikZu3En6KfDpZ8CrnPlqRfek6JSQ" />
             </Avatar>
             <div>
                 <h1 className="font-extrabold">Dulran Hemjitha</h1>
@@ -39,9 +40,10 @@ function Footer() {
             </div>
 
             <div className="mt-2 flex items-center justify-between font-semibold">
-                <a href="/">Home</a>
-                <a href="/about">About</a>
-                <a href="/#lets-talk">Let's Talk</a>
+                <Link href="/">Home</Link>
+                <Link href="/about">About</Link>
+                <Link href="/projects">Projects</Link>
+                <Link href="/#lets-talk">Let's Talk</Link>
             </div>
             <div className="mt-5 flex justify-center">
                 <span className="text-sm">

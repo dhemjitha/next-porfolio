@@ -31,6 +31,7 @@ function Navigation() {
                 >
                     Home
                 </Link>
+
                 
                 <Link
                     href="/about"
@@ -40,6 +41,14 @@ function Navigation() {
                     About
                 </Link>
 
+                <Link
+                    href="/projects"
+                    className={`block rounded-lg px-2 py-1 font-semibold ${isActiveLink('/projects') ? 'bg-blue-700 text-white' : ''
+                        }`}
+                >
+                    Projects
+                </Link>
+                
                 <Link
                     href="/#lets-talk"
                     className={`block rounded-lg px-2 py-1 font-semibold`}
@@ -100,6 +109,14 @@ function Navigation() {
                             onClick={toggleMenu}
                         >
                             About
+                        </Link>
+
+                        <Link
+                            href="/projects"
+                            className="dark:text-gray-300 dark:hover:text-white"
+                            onClick={toggleMenu}
+                        >
+                            Projects
                         </Link>
 
                         <Link
