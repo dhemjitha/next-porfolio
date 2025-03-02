@@ -9,13 +9,13 @@ function Projects() {
     {
       title: 'HirelyAI - AI-Powered Hiring Revolution',
       description: 'Streamlining the hiring process using AI technologies.',
-      link: '/hirelyai',
+      link: '/projects/hirelyai',
       projectLink: 'https://aidf-front-end-dulran.netlify.app/'
     },
     {
       title: 'AuraFashion - Modern E-Commerce Platform',
       description: 'A seamless shopping experience with advanced features.',
-      link: '/aurafashion',
+      link: '/projects/aurafashion',
       projectLink: 'https://aurafashion.rf.gd/'
     },
   ];
