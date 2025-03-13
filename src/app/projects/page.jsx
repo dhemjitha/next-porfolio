@@ -32,7 +32,7 @@ function Projects() {
       <p className="py-2">Here is what I have accomplished:</p>
       <div className="mt-6 space-y-6">
         {projects.map((project, index) => (
-          <div key={index} className="ml-2 pb-4 border-b border-gray-800">
+          <div key={index} className="ml-2 pb-4 border-b border-secondary/15">
             <Link href={project.link}>
               <p className="text-lg font-semibold hover:underline">
                 {project.title}
