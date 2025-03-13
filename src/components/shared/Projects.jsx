@@ -2,9 +2,12 @@
 
 import React from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import { Separator } from '../ui/separator';
 
 function Projects() {
+  const router = useRouter();
+  
   const projects = [
     {
       title: 'HirelyAI - AI-Powered Hiring Revolution',
@@ -20,6 +23,10 @@ function Projects() {
     },
   ];
 
+  const navigateToDetails = (path) => {
+    router.push(path);
+  };
+
   return (
     <div className="py-5 text-white">
       <h1 className="text-2xl font-semibold">Projects</h1>
@@ -33,14 +40,22 @@ function Projects() {
               </p>
             </Link>
             <p className="text-gray-300 mt-2">{project.description}</p>
-            <a 
-              href={project.projectLink} 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-blue-400 text-sm hover:underline mt-2"
-            >
-              View Project
-            </a>
+            <div className="mt-3 flex space-x-4">
+              <button 
+                onClick={() => navigateToDetails(project.link)}
+                className="text-blue-400 text-sm hover:underline"
+              >
+                Read Details
+              </button>
+              <a 
+                href={project.projectLink} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-blue-400 text-sm hover:underline"
+              >
+                View Project
+              </a>
+            </div>
           </div>
         ))}
       </div>

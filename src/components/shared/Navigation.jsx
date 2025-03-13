@@ -13,7 +13,12 @@ function Navigation() {
         setIsMenuOpen(!isMenuOpen);
     }
 
-    const isActiveLink = (path) => pathname === path;
+    const isActiveLink = (path) => {
+        if (path === '/') {
+          return pathname === '/';
+        }
+        return pathname === path || pathname.startsWith(`${path}/`);
+      };
 
     return (
         <nav className="flex py-5 justify-between items-center">
