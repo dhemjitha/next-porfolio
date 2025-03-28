@@ -1,13 +1,12 @@
 'use client';
 
 import React from 'react';
-import AuraFashion from './AuraFashion';
+import ShopZoneAI from './ShopzoneAI';
+
 
 function page() {
     return (
-        <div>
-            <AuraFashion/>
-        </div>
+        <ShopZoneAI/>
     );
 }
 

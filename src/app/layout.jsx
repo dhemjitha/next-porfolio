@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="icon" href="/favicon.ico" />
       </head>
-      <body className={`${publicSans.className} antialiased bg-black max-w-2xl px-8 lg:px-0 mx-auto`}>
+      <body className={`${publicSans.className} antialiased bg-[hsl(223,70%,4%)] max-w-2xl px-8 lg:px-0 mx-auto`}>
         <Navigation />
         {children}
         <Footer />

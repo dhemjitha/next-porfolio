@@ -7,7 +7,7 @@ import { Separator } from '../ui/separator';
 
 function Projects() {
   const router = useRouter();
-  
+
   const projects = [
     {
       title: 'HirelyAI - AI-Powered Hiring Revolution',
@@ -16,11 +16,12 @@ function Projects() {
       projectLink: 'https://aidf-front-end-dulran.netlify.app/'
     },
     {
-      title: 'AuraFashion - Modern E-Commerce Platform',
-      description: 'A seamless shopping experience with advanced features.',
-      link: '/projects/aurafashion',
-      projectLink: 'https://aurafashion.rf.gd/'
+      title: 'Horizone - AI-Powered Hotel Booking',
+      description: 'An innovative platform offering personalized hotel recommendations using AI.',
+      link: '/projects/horizone',
+      projectLink: 'https://next-aidf-dulran.vercel.app/'
     },
+
   ];
 
   const navigateToDetails = (path) => {
@@ -41,15 +42,15 @@ function Projects() {
             </Link>
             <p className="text-gray-300 mt-2">{project.description}</p>
             <div className="mt-3 flex space-x-4">
-              <button 
+              <button
                 onClick={() => navigateToDetails(project.link)}
                 className="text-blue-400 text-sm hover:underline"
               >
                 Read Details
               </button>
-              <a 
-                href={project.projectLink} 
-                target="_blank" 
+              <a
+                href={project.projectLink}
+                target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-400 text-sm hover:underline"
               >
@@ -58,8 +59,14 @@ function Projects() {
             </div>
           </div>
         ))}
+        <br />
+        <Link href="/projects">
+          <p className="text-sm font-semibold hover:underline">
+            Read All Projects
+          </p>
+        </Link><br />
       </div>
-      <Separator/>
+      <Separator />
     </div>
   );
 }

@@ -15,11 +15,25 @@ function Projects() {
       projectLink: 'https://aidf-front-end-dulran.netlify.app/',
     },
     {
-      title: 'AuraFashion - Modern E-Commerce Platform',
-      description: 'A seamless shopping experience with advanced features.',
-      link: '/projects/aurafashion',
-      projectLink: 'https://aurafashion.rf.gd/',
+      title: 'Horizone - AI-Powered Hotel Booking',
+      description: 'An innovative platform offering personalized hotel recommendations using AI.',
+      link: '/projects/horizone',
+      projectLink: 'https://next-aidf-dulran.vercel.app/'
     },
+    {
+      title: 'ACME Dashboard - Financial Management Platform',
+      description: 'A full-stack financial dashboard built with Next.js, Prisma, and PostgreSQL.',
+      link: '/projects/nextjs-dashboard',
+      projectLink: 'https://nextjs-dashboard-dhemjithas-projects.vercel.app/'
+    },
+    {
+      title: 'ShopZoneAI - AI-Powered E-commerce Platform',
+      description: 'An AI-driven e-commerce platform offering personalized shopping experiences with intelligent recommendations and secure payment integration.',
+      link: '/projects/shopzoneai',
+      projectLink: 'https://aidf-e-commerce-front-end-dulran.netlify.app/'
+    }
+
+
   ];
 
   const navigateToDetails = (path) => {
@@ -39,18 +53,18 @@ function Projects() {
               </p>
             </Link>
             <p className="text-gray-300 mt-2">{project.description}</p>
-            
+
             <div className="mt-3">
-              <button 
+              <button
                 onClick={() => navigateToDetails(project.link)}
                 className="text-blue-400 text-sm hover:underline mr-4"
               >
                 Read Details
               </button>
-              
-              <a 
-                href={project.projectLink} 
-                target="_blank" 
+
+              <a
+                href={project.projectLink}
+                target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-400 text-sm hover:underline"
               >
