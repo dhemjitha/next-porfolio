@@ -8,7 +8,7 @@ function Hello() {
                 <Avatar className="w-20 h-20">
                     <AvatarImage
                         className="w-full h-full rounded-full"
-                        src="https://media.licdn.com/dms/image/v2/D5603AQHNo8f5n--PvA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1720128085923?e=1746057600&v=beta&t=lmKpyElbPzGnR5fikZu3En6KfDpZ8CrnPlqRfek6JSQ"
+                        src="/profile/dulran.jpeg"
                     />
                 </Avatar>
             </div>
