@@ -5,6 +5,7 @@ import { Separator } from '../ui/separator'
 import { Avatar, AvatarImage } from '../ui/avatar';
 import { SocialIcon } from "react-social-icons";
 import Link from 'next/link';
+import SocialLinks from './SocialLinks';
 
 function Footer() {
     return (
@@ -19,23 +20,7 @@ function Footer() {
             </div>
             <div>
                 <div className="flex space-x-6 mt-0">
-                    <SocialIcon
-                        url="https://github.com/dhemjitha"
-                        style={{ height: 28, width: 28 }}
-                    />
-                    <SocialIcon
-                        url="https://www.linkedin.com/in/dulran-hemjitha/"
-                        style={{ height: 32, width: 32 }}
-                    />
-                    <SocialIcon
-                        network="x"
-                        url="https://x.com/dhemjitha"
-                        style={{ height: 28, width: 28 }}
-                    />
-                    <SocialIcon
-                        url="https://www.youtube.com/@dhemjitha"
-                        style={{ height: 28, width: 28 }}
-                    />
+                    <SocialLinks/>
                 </div>
             </div>
 
@@ -44,12 +29,6 @@ function Footer() {
                 <Link href="/about">About</Link>
                 <Link href="/projects">Projects</Link>
                 <Link href="/#lets-talk">Let's Talk</Link>
-            </div>
-            <div className="mt-5 flex justify-center">
-                <span className="text-sm">
-                    &copy; {new Date().getFullYear()} All Rights
-                    Reserved.
-                </span>
             </div>
         </footer>
     )
