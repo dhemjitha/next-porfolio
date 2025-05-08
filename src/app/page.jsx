@@ -5,11 +5,11 @@ import Title from "@/components/shared/Title";
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Hello/>
       <Title/>
       <Projects/>
       <Contact/>
-    </div>
+    </>
   );
 }

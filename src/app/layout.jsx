@@ -7,7 +7,7 @@ export const metadata = {
   title: "DulranDev",
   description: "FullStack Developer, ReactJS, NextJS, ExpressJS, TypeScript",
   icons: {
-    icon: "/favicon.ico", // Add favicon icon
+    icon: "/favicon.ico",
   },
 };
 

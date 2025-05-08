@@ -23,9 +23,9 @@ function Navigation() {
     return (
         <nav className="flex py-5 justify-between items-center">
             <div>
-                <a href="/" className="text-3xl font-bold text-white text-underlay-1">
+                <Link href="/" className="text-3xl font-bold text-white text-underlay-1">
                     DulranDev
-                </a>
+                </Link>
             </div>
 
             <div className="lg:flex lg:gap-x-10 ml-auto hidden justify-center text-white">
